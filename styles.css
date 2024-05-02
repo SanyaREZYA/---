@@ -300,7 +300,7 @@ html {
 }
 
 .button-left-arrow__bg {
-    background-image: url("/images/arrow_left_button.png");
+    background-image: url("images/arrow_left_button.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-color: white;
@@ -308,7 +308,7 @@ html {
 }
 
 .button-right-arrow__bg {
-    background-image: url("/images/arrow_right_button.png");
+    background-image: url("images/arrow_right_button.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-color: white;

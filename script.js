@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function changeProfession(index) {
         professionName.textContent = professionDescriptions[index];
         for (let i = 0; i < professionImages.length; i++) {
-            professionImages[i].src = `/images/image_${index}_${i + 1}.jpg`; // Припустимо, що у вас є зображення image_0_1.jpg, image_0_2.jpg і так далі для кожної професії
+            professionImages[i].src = `images/image_${index}_${i + 1}.jpg`;
         }
     }
 
