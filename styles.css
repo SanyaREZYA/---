@@ -488,7 +488,7 @@ img {
     }
 
     .portfolio-container {
-        height: 1250px;
+        height: auto;
     }
 
     .portfolio {
