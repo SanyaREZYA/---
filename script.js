@@ -59,3 +59,8 @@ function toggleNav() {
   
     navLinks.style.display = (navLinks.style.display === 'block') ? 'none' : 'block';
   }
+
+function goHome()
+{
+    window.location.href = "index.html"
+}
