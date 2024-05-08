@@ -434,6 +434,8 @@ img {
     .burger-icon {
         display: block;
         cursor: pointer;
+        background-position: center;
+        background-size: cover;
     }
 
     .myname-text {
