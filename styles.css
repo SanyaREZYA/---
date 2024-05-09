@@ -165,7 +165,6 @@ html {
 }
 
 .photo img {
-
     background-color: rgb(192, 192, 192);
 }
 
@@ -256,6 +255,10 @@ html {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.profession-image-content img {
+    transition: 0.4s;
 }
 
 /*PORTFOLIO*/
@@ -393,6 +396,11 @@ a {
 img {
     background-color: rgb(192, 192, 192);
 }
+
+.profession-image-content img:hover {
+    scale: 120%;
+}
+
 
 @media screen and (max-width: 1024px) {
 
