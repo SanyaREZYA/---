@@ -1,599 +1,526 @@
 :root {
-    --color1: #FFFAF2;
-    --color2: #F5D6AB;
-    --color3: #C66C49;
-    --color4: #8B4136;
-    --color5: #333333;
-    --section-bg-1: #FFFAF2;
+  --color1: #FFFAF2;
+  --color2: #F5D6AB;
+  --color3: #C66C49;
+  --color4: #8B4136;
+  --color5: #333333;
+  --section-bg-1: #FFFAF2;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Libre Franklin', sans-serif;
-    color: var(--color5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+  color: var(--color5);
 }
 
 /*HEADER*/
-
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    width: 100%;
-    height: 756px;
-    background-image: url("images/header_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 756px;
+  background-image: url("images/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
-
-.header-top {
-    display: flex;
-    align-items: center;
-    margin-top: 93px;
-    margin-bottom: 150px;
+.header .header-top {
+  display: flex;
+  align-items: center;
+  margin-top: 93px;
+  margin-bottom: 150px;
 }
-
-.nav {
-    display: flex;
-    gap: 464px;
+.header .nav {
+  display: flex;
+  gap: 464px;
 }
-
-.logo {
-    font-size: 24px;
-    font-weight: 700;
+.header .nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  gap: 60px;
 }
-
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
-    gap: 60px;
+.header .logo {
+  font-size: 24px;
+  font-weight: 700;
 }
-
-.burger-icon {
-    display: none;
-    width: 30px;
-    height: 30px;
+.header .burger-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
 }
-
-.header-down {
-    display: flex;
-    flex-direction: column;
-    gap: 90px;
+.header .header-down {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
 }
-
-.info-about-me-container {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.header .header-down .info-about-me-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-
-.myname-text {
-    font-size: 64px;
-    font-weight: lighter;
+.header .header-down .info-about-me-container .myname-text {
+  font-size: 64px;
+  font-weight: lighter;
 }
-
-.mylocation-text {
-    font-size: 24px;
-    font-weight: 400;
+.header .header-down .info-about-me-container .mylocation-text {
+  font-size: 24px;
+  font-weight: 400;
 }
-
-.latest-work-link {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: underline;
+.header .header-down .info-about-me-container .latest-work-link {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
 }
-
-/*HEADER*/
 
 /*ABOUT*/
-
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-    /* height: 500px; */
-    padding-bottom: 100px;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding-bottom: 100px;
+  gap: 50px;
+}
+.about-container .about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.about-container .about p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
 }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.section-header {
-    font-size: 24px;
-    font-weight: bolder;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 18px;
-    line-height: 30px;
-    text-align: justify;
-}
-
-/*ABOUT*/
-
-/*SKILLS*/
-
+/* SKILLS */
 .skills-container {
-    /* height: 500px; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding-bottom: 40px;
-    background-color: var(--section-bg-1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-bottom: 40px;
+  background-color: var(--section-bg-1);
+}
+.skills-container .skills {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.skills-container .skills .skills-content {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.skills-container .skills .skills-content .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.skills-container .skills .skills-content .photo .myphoto {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(192, 192, 192);
+}
+.skills-container .skills .skills-content .info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.skills-container .skills .skill-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+.skills-container .skills .skill-container .skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills-container .skills .skill-container .progress-bar {
+  width: 100%;
+  height: 24px;
+  background-color: var(--color2);
+}
+.skills-container .skills .skill-container .progress-bar .progress {
+  height: 24px;
+  background-color: var(--color3);
+  transition: 0.4s;
 }
 
-.skills {
-    padding-left: 100px;
-    padding-right: 100px;
+/*PORTFOLIO*/
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  height: 700px;
+}
+.portfolio-container .profession-name {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.portfolio-container .portfolio {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.portfolio-container .portfolio .portfolio-content {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-container .portfolio .portfolio-content .profession-description-container {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-container .portfolio .portfolio-content .profession-description-container .profession-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.portfolio-container .portfolio .portfolio-content .profession-description-container .button-container {
+  display: flex;
+  gap: 10px;
+}
+.portfolio-container .portfolio .portfolio-content .profession-description-container .button-container .button {
+  width: 24px;
+  height: 24px;
+}
+.portfolio-container .portfolio .portfolio-content .profession-description-container .profession-image-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.portfolio-container .portfolio .portfolio-content .profession-description-container .profession-image-container .profession-image-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.portfolio-container .portfolio .portfolio-content .profession-description-container .profession-image-container .profession-image-content img {
+  transition: 0.4s;
 }
 
-.skills-content {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
+/*FOOTER*/
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: var(--section-bg-1);
+}
+.footer-container .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.footer-container .footer a {
+  color: var(--color5);
+}
+.footer-container .footer .footer-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 400px;
+  width: 100%;
+  font-size: 18px;
+}
+.footer-container .footer .footer-info .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-container .footer .footer-info .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.skill-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
+/*LABAS*/
+.labas-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.labas-container .labas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: black;
+}
+.labas-container .labas .labas-h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.labas-container .labas .labas-p {
+  font-size: 1.5rem;
+}
+.labas-container .labas .labas-button {
+  width: 250px;
+  height: 75px;
+  border: var(--color4) 2px solid;
+  background-color: white;
+  color: var(--color4);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: ease 0.4s;
+}
+.labas-container .labas .labas-button:hover {
+  background-color: var(--color3);
+  color: white;
 }
 
-.skill {
-    display: flex;
-    flex-direction: row;
-}
-
-.photo img {
-    background-color: rgb(192, 192, 192);
+/*GLOBAL STYLES*/
+.section-header {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .content-name {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 600;
-    width: 446px;
-    height: 24px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  height: 24px;
 }
 
 .content {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
 }
-
-.progress-bar {
-    width: 446px;
-    height: 24px;
-    background-color: var(--color2);
-}
-
-.progress {
-    height: 24px;
-    width: 0;
-    background-color: var(--color3);
-    transition: 0.4s;
-}
-
-/*SKILLS*/
-
-/*PORTFOLIO*/
-
-.portfolio-container {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: 100%;
-    height: 700px;
-}
-
-.profession-name {
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-
-.portfolio {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.portfolio-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.profession-description-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.profession-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-}
-
-.button-container {
-    display: flex;
-    gap: 10px;
-}
-
-.button {
-    width: 24px;
-    height: 24px;
-}
-
-.profession-image-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.profession-image-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.profession-image-content img {
-    transition: 0.4s;
-}
-
-/*PORTFOLIO*/
-
-/*FOOTER*/
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: 100%;
-    padding-bottom: 100px;
-    background-color: var(--section-bg-1);
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.footer a {
-    color: var(--color5);
-}
-
-.footer-info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 400px;
-    width: 100%;
-    font-size: 18px;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/*FOOTER*/
-
-/*LABAS*/
-
-.labas-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.labas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    color: black;
-}
-
-.labas-h1 {
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.labas-p {
-    font-size: 1.5rem;
-}
-
-.labas-button {
-    width: 250px;
-    height: 75px;
-    border: var(--color4) 2px solid;
-    background-color: white;
-    color: var(--color4);
-    font-size: 2rem;
-    font-weight: bold;
-    transition: ease 0.4s;
-}
-
-/*LABAS*/
 
 .progress__80per {
-    width: 80%;
+  width: 80%;
 }
 
 .progress__70per {
-    width: 70%;
+  width: 70%;
 }
 
 .progress__60per {
-    width: 60%;
+  width: 60%;
 }
 
 .button-left-arrow__bg {
-    background-image: url("images/arrow_left_button.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: white;
-    border: none;
+  background-image: url("images/arrow_left_button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  border: none;
 }
 
 .button-right-arrow__bg {
-    background-image: url("images/arrow_right_button.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: white;
-    border: none;
+  background-image: url("images/arrow_right_button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  border: none;
 }
 
 .profile__margin {
-    margin-bottom: 40px;
-}
-
-.labas-button:hover {
-    background-color: var(--color3);
-    color: white;
+  margin-bottom: 40px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 img {
-    background-color: rgb(192, 192, 192);
+  background-color: rgb(192, 192, 192);
 }
 
 .profession-image-content img:hover {
-    scale: 120%;
+  scale: 120%;
 }
 
-
+/*MEDIA QUERIES*/
 @media screen and (max-width: 1024px) {
-
-    .header {
-        background-size: cover;
-    }
-
-    .nav-links {
-        gap: 40px;
-        font-size: 1em;
-    }
-
-    .profession-description {
-        width: 90%;
-    }
-
-    .skill {
-        flex-wrap: wrap;
-    }
-
-    .footer-container {
-        padding-bottom: 50px;
-    }
-
-    .footer-info {
-        gap: 200px;
-    }
+  .header .nav .nav-links {
+    gap: 20px;
+    font-size: 18px;
+  }
+  .header .info-about-me-container .myname-text {
+    font-size: 28px;
+  }
+  .header .info-about-me-container .mylocation-text {
+    font-size: 18px;
+  }
+  .skills-content {
+    flex-wrap: wrap;
+  }
+  .footer-container {
+    padding-bottom: 50px;
+  }
+  .footer-container .footer-info {
+    gap: 200px;
+  }
 }
-
 @media screen and (max-width: 768px) {
-
-    .nav {
-        gap: 200px;
-    }
-
-    .myname-text {
-        font-size: 3em;
-    }
-
-    .content-name {
-        width: 300px;
-    }
-
-    .photo img {
-        width: 200px;
-        height: 200px;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .skills-content {
-        gap: 50px;
-    }
-
-    .progress-bar {
-        width: 300px;
-    }
-
-    .profession-image_01 {
-        width: 250px;
-        height: 100px;
-    }
-
-    .profession-image_02 {
-        width: 250px;
-        height: 165px;
-    }
-
-    .profession-image_03 {
-        width: 180px;
-        height: 165px;
-    }
-
-    .profession-image_04 {
-        width: 180px;
-        height: 100px;
-    }
-
-    .profession-description-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-    }
-
-    .profession-description {
-        align-items: center;
-        gap: 20px;
-    }
-
-    .profession-name {
-        text-align: center;
-    }
+  .header .nav {
+    gap: 200px;
+  }
+  .header .info-about-me-container .myname-text {
+    font-size: 18px;
+  }
+  .header .content-name {
+    width: 300px;
+  }
+  .skills-container .skills .skills-content .photo .myphoto {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+  .skills-content {
+    gap: 50px;
+  }
+  .progress-bar {
+    width: 300px;
+  }
+  .profession-description-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .profession-description-container .profession-description {
+    align-items: center;
+    gap: 20px;
+  }
+  .profession-image_01 {
+    width: 250px;
+    height: 100px;
+  }
+  .profession-image_02 {
+    width: 250px;
+    height: 165px;
+  }
+  .profession-image_03 {
+    width: 180px;
+    height: 165px;
+  }
+  .profession-image_04 {
+    width: 180px;
+    height: 100px;
+  }
+  .profession-name {
+    text-align: center;
+  }
 }
-
 @media screen and (max-width: 425px) {
-
-    .header-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .burger-icon {
-        display: block;
-        cursor: pointer;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .myname-text {
-        font-size: 28px;
-    }
-
-    .mylocation-text {
-        font-size: 18px;
-    }
-
-    .nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .nav-links {
-        display: none;
-        width: 100%;
-        font-size: 24px;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .profession-description {
-        width: 100%;
-    }
-
-    .about {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .skills {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .skills-content {
-        flex-direction: column;
-    }
-
-    .profession-image-container {
-        flex-wrap: wrap;
-    }
-
-    .photo img {
-        width: 150px;
-        height: 150px;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .portfolio-container {
-        height: auto;
-    }
-
-    .portfolio {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .profession-image_01 {
-        width: 175px;
-        height: 72px;
-    }
-
-    .profession-image_02 {
-        width: 175px;
-        height: 111px;
-    }
-
-    .profession-image_03 {
-        width: 175px;
-        height: 111px;
-    }
-
-    .profession-image_04 {
-        width: 175px;
-        height: 72px;
-    }
-
-    .footer {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
+  .header .header-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .header .header-top .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .header .header-top .nav .burger-icon {
+    display: block;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+  }
+  .header .header-top .nav .nav-links {
+    display: none;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .header .header-down .info-about-me-container .myname-text {
+    font-size: 28px;
+  }
+  .header .header-down .info-about-me-container .mylocation-text {
+    font-size: 18px;
+  }
+  .about-container .about {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .skills-container .skills {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .skills-container .skills .skills-content {
+    flex-direction: column;
+  }
+  .skills-container .skills .skills-content .photo {
+    width: 300px;
+    height: 300px;
+  }
+  .skills-container .skills .skills-content .photo .myphoto {
+    background-position: center;
+    background-size: cover;
+  }
+  .skills-container .skills .skills-content .info .skill {
+    width: 350px;
+  }
+  .skills-container .skills .skills-content .info .skill .progress-bar {
+    width: 300px;
+  }
+  .profession-description {
+    width: 100%;
+  }
+  .profession-image-container {
+    flex-wrap: wrap;
+  }
+  .portfolio-container {
+    height: auto;
+  }
+  .portfolio-container .portfolio {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .portfolio-container .profession-image_01 {
+    width: 175px;
+    height: 72px;
+  }
+  .portfolio-container .profession-image_02 {
+    width: 175px;
+    height: 111px;
+  }
+  .portfolio-container .profession-image_03 {
+    width: 175px;
+    height: 111px;
+  }
+  .portfolio-container .profession-image_04 {
+    width: 175px;
+    height: 72px;
+  }
+  .footer-container .footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .footer-container .footer .footer-info {
+    gap: 150px;
+  }
+}/*# sourceMappingURL=styles.css.map */
