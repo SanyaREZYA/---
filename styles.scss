@@ -435,9 +435,10 @@ img {
 
   .footer-container {
     padding-bottom: 50px;
-
-    .footer-info {
-      gap: 200px;
+    .footer {
+      .footer-info {
+        gap: 200px;
+      }
     }
   }
 }
@@ -465,6 +466,7 @@ img {
   .skills-container{
     .skills{
       .skills-content{
+        gap: 0;
         .photo {
           .myphoto{
             width: 300px;
@@ -475,10 +477,6 @@ img {
         }
       }
     }
-  }
-
-  .skills-content {
-    gap: 50px;
   }
 
   .progress-bar {
@@ -538,12 +536,13 @@ img {
         .burger-icon {
           display: block;
           cursor: pointer;
-          background-position: center;
-          background-size: cover;
+          font-size: 30px
         }
 
         .nav-links {
           display: none;
+          flex-direction: column;
+          gap: 15px;
           width: 100%;
           font-size: 24px;
           text-align: center;

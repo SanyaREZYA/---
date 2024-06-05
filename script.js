@@ -57,7 +57,7 @@ function toggleNav() {
     const navLinks = document.querySelector('.nav-links');
     const burgerIcon = document.querySelector('.burger-icon');
   
-    navLinks.style.display = (navLinks.style.display === 'block') ? 'none' : 'block';
+    navLinks.style.display = (navLinks.style.display === 'flex') ? 'none' : 'flex';
   }
 
 function goHome()

@@ -375,7 +375,7 @@ img {
   .footer-container {
     padding-bottom: 50px;
   }
-  .footer-container .footer-info {
+  .footer-container .footer .footer-info {
     gap: 200px;
   }
 }
@@ -389,14 +389,14 @@ img {
   .header .content-name {
     width: 300px;
   }
+  .skills-container .skills .skills-content {
+    gap: 0;
+  }
   .skills-container .skills .skills-content .photo .myphoto {
     width: 300px;
     height: 300px;
     background-position: center;
     background-size: cover;
-  }
-  .skills-content {
-    gap: 50px;
   }
   .progress-bar {
     width: 300px;
@@ -446,11 +446,12 @@ img {
   .header .header-top .nav .burger-icon {
     display: block;
     cursor: pointer;
-    background-position: center;
-    background-size: cover;
+    font-size: 30px;
   }
   .header .header-top .nav .nav-links {
     display: none;
+    flex-direction: column;
+    gap: 15px;
     width: 100%;
     font-size: 24px;
     text-align: center;
